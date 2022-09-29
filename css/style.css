@@ -301,7 +301,7 @@ transform: translateY(-50%);
 .features .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem
+    gap:1.5rem;
 }
 .features .box-container .box{
     padding: 3rem 2rem;
@@ -331,14 +331,27 @@ transform: translateY(-50%);
     color: var(--light-color);
 }
 
-.products .product-slider{
-   padding: 1rem;
 
+
+.products .swiper-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem
+}
+   
+
+
+.products .swiper-wrapper .swiper-slide .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    
+    text-align: center;
+     box-shadow:var(--box-shadow--);
+     
 }
 
-.products .product-slider:first-child{
-  margin-bottom: 2rem;
-}
+
+
 
 .products .product-slider .box{
     background: #fff;
@@ -349,7 +362,16 @@ transform: translateY(-50%);
     box-shadow: var(--box-shadow);
     transition: 2s linear;
     
+    
 }
+
+.products .prachi-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem
+}
+
+
 
 .products .product-slider .box:hover{
     outline-offset: 0rem;
@@ -379,19 +401,19 @@ transform: translateY(-50%);
 }
 
 
-.review .review-slider{
-    padding: 1rem;
+.review .swiper-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
 
 }
 .review .review-slider .box{
-    background: #fff;
-    border-radius: .5rem;
-    text-align: center;
     padding: 3rem 2rem;
-    outline-offset: var(--outline);
-    box-shadow: var(--box-shadow);
-    transition: 2s linear;
-    
+    background: #fff;
+    outline: var(outline);
+    outline-offset: -1rem;
+    text-align: center;
+     box-shadow:var(--box-shadow);
 }
 .review .review-slider .box:hover{
     outline: var(--outline-hover);
